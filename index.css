@@ -1,0 +1,295 @@
+:root {
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 32px;
+    --space-lg: 64px;
+    --space-xl: 120px;  
+    --space-2xl: 160px;  
+}
+
+@font-face {
+    font-family: 'pretendard';
+    src: url('./fonts/PretendardVariable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'uwu';
+    src: url('./fonts/UwU.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    font-family:'pretendard',sans-serif;
+    background-color: #FAFAFA;
+    color: #1A1A1A;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+}
+
+#myCharacter {
+    height: 150px;
+    width: auto;
+}
+
+#mainSlogan {
+    display: flex;
+    justify-content: left;
+    margin-bottom: var(--space-md);
+}
+
+#displaySloganText {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#subSlogan {
+    display: flex;
+    justify-content: left;
+    margin-bottom: var(--space-2xl);
+}
+
+#displaySubSloganText {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#capsuleTitle {
+    border: 1.23px solid black;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 14px;
+}
+
+#myThing {
+    text-align: left;
+    margin-bottom: var(--space-md);
+}
+
+
+.thingBox {
+    position: absolute;
+    top: 100px;
+    left: 62%;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.thingImage {
+    width: 450px;
+    height: auto;
+    border-radius: 40px;
+    box-shadow: 0px 4px 12px;
+}
+#careerText {
+    font-family: 'uwu';
+    text-align: center;
+    margin: var(--space-sm);
+}
+
+#myLife {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: var(--space-xl);
+}
+
+#thumbnailClick {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#thumbnailClick:hover {
+    transform: scale(1.1);
+}
+
+/* 애니메이션*/
+
+.deck {
+    position: relative;
+    width: 450px;
+    height: 400px;
+    margin-bottom: var(--space-2xl);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.deck.wider {
+    position: relative;
+    width: 450px;
+    height: 1550px;
+    cursor: pointer;
+}
+
+.card {
+    position: absolute;
+}
+
+.textPosition {
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.textPositionLeft {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.careerTextPosition {
+    text-align: right;
+    font-size: 40px;
+}
+
+.imageZIndex {
+    z-index: 2;
+}
+
+.thumbnailZIdenx {
+    z-index: 3;
+}
+
+.textPosition.open {
+    transform: translateX(600px) scale(1);
+    text-align: left;
+    margin-top: 10%;
+    
+}
+
+.textPositionLeft.open{
+    transform: translateX(-600px) scale(1);
+    text-align: left;
+    margin-top: 10%;
+    
+}
+
+.thingBox:nth-child(1) {
+    z-index: 6;
+    transform: scale(1.3);
+}
+
+.thingBox:nth-child(2) {
+    z-index: 5;
+    transform: scale(0.7);
+}
+
+.thingBox:nth-child(3) {
+    z-index: 4;
+    transform: scale(0.7);
+}
+
+.thingBox:nth-child(4) {
+    z-index: 3;
+    transform: scale(0.7);
+}
+
+/* 1번 카드: 제자리 */
+.thingBox:nth-child(1).move {
+    transform: translate(-62%, -20%) rotate(0deg) scale(1);
+}
+
+/* 2번 카드: 기본 -50%에서 아래로 250px 이동 */
+.thingBox:nth-child(2).move {
+    transform: translate(calc(-52% + 500px), calc(-50% + 500px)) rotate(0deg);
+}
+
+/* 3번 카드: 2번의 2배(500px) 이동 */
+.thingBox:nth-child(3).move {
+    transform: translate(-62%, calc(-50% + 900px)) rotate(0deg);
+}
+
+/* 4번 카드: 2번의 3배(750px) 이동 */
+.thingBox:nth-child(4).move {
+    transform: translate(calc(-52% + 500px), calc(-50% + 1300px)) rotate(0deg);
+}
+
+.careerTable {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    padding: 20px 0px 20px;
+    border-bottom: 1px solid #111;
+    width: 100%;
+}
+
+
+.careerRole {
+    flex: 0 0 320px; /* 늘어나지 않고 320px 고정 */
+    text-align: left;
+    font-size: 20px;
+}
+
+/* 2열 (회사/내용): 남은 공간을 채우면서 왼쪽 정렬 */
+.careerContent {
+    flex: 0 0 500px;   /* 남은 여백 모두 차지 */
+    text-align: left;
+    font-size: 20px;
+}
+
+/* 3열 (연도): 글자 크기만큼만 차지하고 오른쪽 끝 정렬 */
+.careerYear {
+    flex: 140px 0 0;
+    text-align: right;
+    font-size: 20px;
+}
+
+.careerBox {
+    font-size: 24px ;
+}
+
+#pomoBox {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#moreThing {
+    margin-top: 40px;
+    font-size: 16px;
+    margin-bottom: var(--space-xl);
+}
+
+.pomoImg {
+    width: 280px;
+    height: auto;
+    border-radius: 30px;
+    border: 0.5px solid black;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.pomoImg:hover {
+    transform: scale(1.1);
+}
+
+#touchBtn {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #1A1A1A;
+    color: #FAFAFA;
+}
