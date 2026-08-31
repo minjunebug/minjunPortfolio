@@ -23,8 +23,17 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'departure';
+    src: url('./fonts/DepartureMono-Regular.otf') format(OpenType);
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
-    width: 1000px;
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
     font-family:'pretendard',sans-serif;
     background-color: #FAFAFA;
@@ -33,10 +42,58 @@ body {
 
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 1000px;
+    transform: translateX(-50%);
+    height: 214px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
+    z-index: 1000;
+    
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* 텍스트보다 뒤로 배치 */
+  
+  /* 1. 기본 배경색 그라데이션 (위쪽은 불투명, 아래쪽은 완전 투명) */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  /* 2. 블러 처리 */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  /* 3. 블러 강도를 위에서 아래로 점차 약해지게 마스킹 */
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,      /* 위쪽: 블러 100% 적용 */
+    rgba(0, 0, 0, 0.2) 70%,   /* 중간: 블러 서서히 감소 */
+    rgba(0, 0, 0, 0) 100%     /* 아래쪽: 블러 완전 제거(투명) */
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.content {
+    padding-top: 240px;
 }
 
 #myCharacter {
@@ -71,10 +128,10 @@ body {
 }
 
 #capsuleTitle {
-    border: 1.23px solid black;
+    border: 1.3px solid black;
     border-radius: 20px;
     padding: 10px 25px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 #myThing {
@@ -270,6 +327,7 @@ body {
 
 #moreThing {
     margin-top: 40px;
+    font-family: 'departure';
     font-size: 16px;
     margin-bottom: var(--space-xl);
 }
@@ -292,4 +350,35 @@ body {
     padding: 10px 20px;
     background-color: #1A1A1A;
     color: #FAFAFA;
+}
+
+.roundedBox {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: #1A1A1A;
+  border-radius: 4px; /* 둥글기 조절 */
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+  .deck, .deck.wider {
+    position: static;      /* absolute 배치 포기 */
+    width: 100%;
+    height: auto;
+  }
+  .thingBox {
+    position: static;      /* 절대좌표 → 그냥 위에서 아래로 쌓기 */
+    transform: none !important;
+    width: 100%;
+    flex-direction: column; /* 이미지-텍스트를 세로로 */
+    margin-bottom: var(--space-lg);
+  }
+  .textPosition, .textPositionLeft {
+    position: static;
+    width: 100%;
+    transform: none !important;
+  }
+  .thingImage { width: 100%; max-width: 400px; }
 }
