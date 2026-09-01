@@ -47,6 +47,11 @@ function changeLanguage(lang) {
     if (indicator) {
         indicator.classList.toggle('en-active', lang === 'en');
     }
+
+    // 메타 캠페인 라인차트도 같은 언어로 다시 그림
+    if (typeof renderLeadCostChart === 'function') {
+        renderLeadCostChart(lang);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

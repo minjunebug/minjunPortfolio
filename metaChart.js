@@ -1,12 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const ctx = document.getElementById('leadCostChart');
+let leadCostChartInstance = null;
 
-    new Chart(ctx, {
+function renderLeadCostChart(lang) {
+    const ctx = document.getElementById('leadCostChart');
+    if (!ctx || !translations[lang]) return;
+
+    const labels = translations[lang].chartMonths;
+    const datasetLabel = translations[lang].chartDatasetLabel;
+
+    // 기존 차트가 있으면 파괴하고 새로 그림 (중복 렌더링 방지)
+    if (leadCostChartInstance) {
+        leadCostChartInstance.destroy();
+    }
+
+    leadCostChartInstance = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['10월', '11월', '12월', '1월', '2월', '3월', '4월', '5월', '6월', '7월'],
+            labels: labels,
             datasets: [{
-                label: '유효 리드 단가',
+                label: datasetLabel,
                 data: [59997, 71364, 113951, 121389, 54380, 55271, 27114, 35419, 60322, 57168],
                 borderColor: '#1A1A1A',
                 backgroundColor: 'transparent',
@@ -38,4 +49,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-});
+}

@@ -29,6 +29,9 @@
     "statLabel3": "광고 예산 확대",
     "statSub3": "358만원 → 632만원",
 
+    "chartMonths": ["10월", "11월", "12월", "1월", "2월", "3월", "4월", "5월", "6월", "7월"],
+    "chartDatasetLabel": "유효 리드 단가",
+
     "careerHeading1": "Recent",
     "careerHeading2": "Career",
 
@@ -79,6 +82,9 @@
     "statSub2": "45.2 → 167.5",
     "statLabel3": "Ad budget scale-up",
     "statSub3": "₩3.58M → ₩6.32M",
+
+    "chartMonths": ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+    "chartDatasetLabel": "Cost per valid lead",
 
     "careerHeading1": "Recent",
     "careerHeading2": "Career",
