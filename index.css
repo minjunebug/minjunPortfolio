@@ -111,6 +111,7 @@ body {
 .headerLeft {
     display: flex;
     align-items: center;
+    gap: var(--space-sm);
 }
 
 #myName {
@@ -118,6 +119,31 @@ body {
     font-size: 16px;
     font-weight: 100;
     color: #1A1A1A;
+}
+
+#langSwitch {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    display: flex;
+    background-color: #F0F0EC;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.langBtn {
+    font-family: 'pretendard', sans-serif;
+    font-size: 12px;
+    color: #999;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 6px;
+}
+
+.langBtn.active {
+    color: #1A1A1A;
+    font-weight: 500;
 }
 
 .content {
@@ -426,12 +452,6 @@ body {
   .thingImage { width: 100%; max-width: 400px; }
 }
 
-/* 메타 캠페인 캡슐 섹션 - 기존 #myThing과 동일 톤 유지 */
-#metaThing {
-    text-align: left;
-    margin-bottom: var(--space-md);
-}
-
 #metaStatSection {
     margin-bottom: var(--space-2xl);
 }
@@ -610,5 +630,11 @@ body {
     }
     50% { 
         box-shadow: 0 0 0 10px rgba(26, 26, 26, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    #langSwitch {
+        margin-left: 4px;
     }
 }

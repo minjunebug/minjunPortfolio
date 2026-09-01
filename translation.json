@@ -1,0 +1,104 @@
+{
+  "ko": {
+    "slogan1": "익숙한 불편함을 편리한 일상으로",
+    "slogan2": "문제를 집요하게 관찰하고,",
+    "slogan3": "더 나은 효율을 직접 만들어 냅니다.",
+    "subSlogan1": "마케팅 현장에서 필요한 도구는 직접 만들어 씁니다.",
+    "subSlogan2": "대시보드로 광고 효율을 높였고, 지금은 앱도 만들고 있습니다.",
+    "touchBtn": "Get in touch",
+
+    "capsuleTitle1": "데이터 분석 대시보드",
+    "clickHint": "클릭해서 자세히 보기",
+
+    "project1Desc": "엑셀의 빼곡한 텍스트 데이터는 직관적인 흐름 파악을 방해하고 있었습니다. 이를 해결하고자 웹 대시보드를 직접 구축해 수치 데이터를 실시간 시각화하고, 기존에 간과되던 세부 지표까지 한눈에 볼 수 있도록 바꿨습니다. 특히 데이터 변동 패턴을 바탕으로 '캠페인 생애주기' 개념을 새롭게 정의하여, 각 캠페인의 수명을 정량적으로 측정하고 최적의 교체 시점을 선제적으로 관리했습니다.",
+
+    "project2Desc": "다수의 광고 캠페인을 효율적으로 총괄·제어할 수 있는 광고 캠페인 통합 목록 및 생애주기 관리 리스트 화면입니다. 상단의 실시간 검색창과 분류별 필터링 기능을 통해 원하는 캠페인을 신속하게 탐색할 수 있으며, 각 캠페인의 온/오프(ON/OFF) 상태와 더불어 데이터 추이에 기반한 '상승세·유지·하락세' 생애주기 지표를 뱃지 형태로 직관화했습니다. 이를 통해 성과가 저하되는 캠페인을 사전에 감지하고 즉각 조치할 수 있도록 지원하여, 일일이 수작업으로 검토하던 캠페인 모니터링 공수를 대폭 절감했습니다.",
+
+    "project3Desc": "엑셀 기반의 방대한 텍스트 데이터를 직관적으로 파악하기 위해 직접 기획·구축한 퍼포먼스 마케팅 성과 분석 대시보드입니다. 상단 KPI 요약 카드와 원클릭 유닛 필터로 핵심 성과를 즉각 인지할 수 있도록 설계했으며, 하단에는 일일 소진 비용, DB 전환수, 노출수의 상관관계를 시계열로 비교하는 다중 축 그래프를 구현했습니다. 이를 통해 비용 대비 전환율 변동과 캠페인 생애주기 패턴을 정량적으로 추적하여, 비효율 광고 교체 및 예산 최적화 의사결정을 선제적으로 지원합니다.",
+
+    "project4Desc": "일자별 광고 집행 성과를 투명하게 모니터링할 수 있는 일별 광고 집행 상세 내역 테이블 화면입니다. 날짜, 광고그룹명과 함께 소진비용, 클릭수, 전환수, 노출수 등 세부 핵심 수치를 직관적인 표 형태로 구조화하였으며, 일자별 오름차순/내림차순 정렬 기능을 더해 데이터 탐색 편의성을 높였습니다. 특히 핵심 성과 지표인 전환수 수치를 강조 표기(하이라이팅)하여 특정 일자의 성과 이상치나 전환 효율의 급격한 변동을 즉각 식별하고 신속하게 대응할 수 있도록 구현했습니다.",
+
+    "capsuleTitle2": "메타 캠페인 운영",
+    "metaStatDesc1": "2026년 3월부터 메타(Meta) 광고 캠페인 운영을 담당하며,",
+    "metaStatDesc2": "광고 예산을 확대하는 동시에 리드 단가를 낮추는 효율 개선을 이끌었습니다.",
+
+    "statLabel1": "유효 리드 단가",
+    "statSub1": "84,216원 → 44,532원",
+    "statLabel2": "월 유효 전환 수",
+    "statSub2": "45.2건 → 167.5건",
+    "statLabel3": "광고 예산 확대",
+    "statSub3": "358만원 → 632만원",
+
+    "careerHeading1": "Recent",
+    "careerHeading2": "Career",
+
+    "careerRole1": "Performance Marketer",
+    "careerContent1": "퍼포먼스 마케팅, 광고 기획, SNS 마케팅",
+    "careerRole2": "Programming",
+    "careerContent2": "현대이지웰 풀스택 부트캠프 (SQL활용)",
+    "careerRole3": "Military",
+    "careerContent3": "군 부대 입소자 관리 시스템 (엑셀, 대량 데이터 정리)",
+
+    "moreThing": "More Stuff I Made",
+    "pomoStoreLink": "App Store에서 보기",
+
+    "footerHook1": "콘크리트 도시에서,",
+    "footerHook2": "만드는 사람으로 자랐습니다.",
+
+    "footerQuote": "어릴 땐 로봇을, 대학 땐 앱을 혼자 기획하고 만들어보며 지냈습니다. 돌아보면 늘 결과보다 만드는 과정 자체가 좋았던 것 같습니다.<br><br>취미로 복싱을 시작한 지도 2년이 넘었습니다. 계속하다 보니, 결국 제가 좋아하는 건 꾸준히 쌓아가는 과정 자체라는 걸 알게 됐습니다.",
+
+    "footerEmail": "Email",
+    "footerCopyright": "© 2026. Made by Minjun."
+  },
+  "en": {
+    "slogan1": "Turning familiar friction",
+    "slogan2": "into everyday convenience,",
+    "slogan3": "I observe problems closely and build the fix myself.",
+    "subSlogan1": "In the field, I build the tools I need myself.",
+    "subSlogan2": "I built a dashboard that improved ad efficiency, and I'm building apps too.",
+    "touchBtn": "Get in touch",
+
+    "capsuleTitle1": "Data Analytics Dashboard",
+    "clickHint": "Click to see more",
+
+    "project1Desc": "Dense, spreadsheet-heavy data was making it hard to read trends at a glance. So I built a web dashboard from scratch to visualize the numbers in real time and surface details that used to get overlooked. I also defined a new concept, the 'campaign lifecycle,' to quantitatively measure how long each campaign stayed effective and proactively manage the right time to replace it.",
+
+    "project2Desc": "A unified campaign list and lifecycle management screen for overseeing and controlling multiple ad campaigns at once. A live search bar and category filters let you find any campaign quickly, while ON/OFF status and a 'rising / steady / declining' lifecycle badge based on performance trends make each campaign's health instantly visible. This made it possible to catch underperforming campaigns early and act on them right away, cutting the manual effort that used to go into monitoring campaigns one by one.",
+
+    "project3Desc": "A performance marketing analytics dashboard I planned and built to make sense of large volumes of spreadsheet data at a glance. KPI summary cards and one-click unit filters surface key performance instantly, while a multi-axis time-series chart at the bottom compares daily spend, DB conversions, and impressions. This lets me quantitatively track cost-to-conversion shifts and campaign lifecycle patterns, supporting proactive decisions on replacing inefficient ads and optimizing budget.",
+
+    "project4Desc": "A daily ad performance table for transparently monitoring day-by-day results. Date, ad group name, spend, clicks, conversions, and impressions are all structured into a clear table, with ascending/descending sort by date for easier exploration. Conversion counts, the key metric, are highlighted so unusual spikes or drops in any given day can be spotted and responded to immediately.",
+
+    "capsuleTitle2": "Meta Campaign Management",
+    "metaStatDesc1": "Since March 2026, I've managed Meta ad campaigns,",
+    "metaStatDesc2": "scaling up the ad budget while driving down the cost per lead.",
+
+    "statLabel1": "Cost per valid lead",
+    "statSub1": "₩84,216 → ₩44,532",
+    "statLabel2": "Monthly valid conversions",
+    "statSub2": "45.2 → 167.5",
+    "statLabel3": "Ad budget scale-up",
+    "statSub3": "₩3.58M → ₩6.32M",
+
+    "careerHeading1": "Recent",
+    "careerHeading2": "Career",
+
+    "careerRole1": "Performance Marketer",
+    "careerContent1": "Performance marketing, ad planning, SNS marketing",
+    "careerRole2": "Programming",
+    "careerContent2": "Hyundai i-Well Fullstack Bootcamp (SQL)",
+    "careerRole3": "Military",
+    "careerContent3": "Built a recruit management system (Excel, large-scale data cleanup)",
+
+    "moreThing": "More Stuff I Made",
+    "pomoStoreLink": "View on the App Store",
+
+    "footerHook1": "Born in a biome",
+    "footerHook2": "of concrete, made into a builder.",
+
+    "footerQuote": "I built robots as a kid, and an app on my own in college, start to finish. Looking back, I've always liked the process of making more than the outcome itself.<br><br>Boxing has been part of my life for over two years now. The longer I stick with it, the more I realize what I actually enjoy is the process of showing up, again and again.",
+
+    "footerEmail": "Email",
+    "footerCopyright": "© 2026. Made by Minjun."
+  }
+}
