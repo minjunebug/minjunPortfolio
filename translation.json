@@ -8,9 +8,17 @@
     "touchBtn": "Get in touch",
 
     "capsuleTitle1": "데이터 분석 대시보드",
+
+    "googleIntroShort": "구글 광고 운영 초기, 팀 내 광고그룹 학습 구조에 대한 오해를 발견해 회의에서 바로잡고, 저조한 캠페인을 매번 재등록하던 방식 대신 학습된 그룹을 유지하는 전략으로 개선했습니다. 이 과정에서 발견한 성과 저하 패턴을 '광고 생애주기'로 정의하고 대시보드로 시각화해, 한 지역 캠페인에서 4개월 만에 유효 리드 단가를 35% 낮췄습니다.",
+
+    "googleIntroExtra": "여러 광고그룹을 함께 두면 서로 경쟁하며 학습에 도움이 된다는 게 기존 통념이었지만, 실제로는 게재 지면 경쟁에서 이긴 한 광고만 노출되며 학습이 강화되고 진 쪽은 예산조차 소진되지 못한다는 사실을 공식 문서로 확인했습니다. 자주 노출되던 광고가 효력을 다하면 흐름이 이미 저조했던 차선 그룹으로 넘어가 캠페인이 조기 종료되며 학습 데이터와 비용이 함께 낭비된다는 점도 이 과정에서 파악했습니다. 이후 소재·캠페인 변경 이력을 기록하는 시트를 팀에 제안해 회사의 표준 운영 방식으로 채택시켰습니다.",
+
+    "readMore": "더보기",
+    "readLess": "접기",
+
     "clickHint": "클릭해서 자세히 보기",
 
-    "project1Desc": "엑셀의 빼곡한 텍스트 데이터는 직관적인 흐름 파악을 방해하고 있었습니다. 이를 해결하고자 웹 대시보드를 직접 구축해 수치 데이터를 실시간 시각화하고, 기존에 간과되던 세부 지표까지 한눈에 볼 수 있도록 바꿨습니다. 특히 데이터 변동 패턴을 바탕으로 '캠페인 생애주기' 개념을 새롭게 정의하여, 각 캠페인의 수명을 정량적으로 측정하고 최적의 교체 시점을 선제적으로 관리했습니다.",
+    "project1Desc": "캠페인별 소진 비용, 전환수, '광고 생애주기' 상태를 한 화면에서 확인할 수 있는 메인 대시보드입니다. 매일 가장 먼저 열어보며 어떤 캠페인을 교체할지 판단하는 기준 화면입니다.",
 
     "project2Desc": "다수의 광고 캠페인을 효율적으로 총괄·제어할 수 있는 광고 캠페인 통합 목록 및 생애주기 관리 리스트 화면입니다. 상단의 실시간 검색창과 분류별 필터링 기능을 통해 원하는 캠페인을 신속하게 탐색할 수 있으며, 각 캠페인의 온/오프(ON/OFF) 상태와 더불어 데이터 추이에 기반한 '상승세·유지·하락세' 생애주기 지표를 뱃지 형태로 직관화했습니다. 이를 통해 성과가 저하되는 캠페인을 사전에 감지하고 즉각 조치할 수 있도록 지원하여, 일일이 수작업으로 검토하던 캠페인 모니터링 공수를 대폭 절감했습니다.",
 
@@ -19,8 +27,7 @@
     "project4Desc": "일자별 광고 집행 성과를 투명하게 모니터링할 수 있는 일별 광고 집행 상세 내역 테이블 화면입니다. 날짜, 광고그룹명과 함께 소진비용, 클릭수, 전환수, 노출수 등 세부 핵심 수치를 직관적인 표 형태로 구조화하였으며, 일자별 오름차순/내림차순 정렬 기능을 더해 데이터 탐색 편의성을 높였습니다. 특히 핵심 성과 지표인 전환수 수치를 강조 표기(하이라이팅)하여 특정 일자의 성과 이상치나 전환 효율의 급격한 변동을 즉각 식별하고 신속하게 대응할 수 있도록 구현했습니다.",
 
     "capsuleTitle2": "메타 캠페인 운영",
-    "metaStatDesc1": "2026년 3월부터 메타(Meta) 광고 캠페인 운영을 담당하며,",
-    "metaStatDesc2": "광고 예산을 확대하는 동시에 리드 단가를 낮추는 효율 개선을 이끌었습니다.",
+    "metaStatDesc": "구글에서 익힌 실험 방법론을 메타 캠페인에도 적용해, 이미지 소재와 텍스트 강조형 스타일이 가장 효과적이라는 걸 확인했습니다. 이 과정에서 소재 자체의 타겟층이 좁을 때 캠페인 타겟까지 함께 좁히면 모수가 이중으로 줄어들어 오히려 운영이 잘 안 된다는 것을 발견해 타겟 전략을 수정했고, 소재와 타겟팅을 함께 조정한 결과 2026년 3월부터 광고 예산을 76% 확대하면서도 유효 리드 단가는 47% 낮췄습니다.",
 
     "statLabel1": "유효 리드 단가",
     "statSub1": "84,216원 → 44,532원",
@@ -62,9 +69,17 @@
     "touchBtn": "Get in touch",
 
     "capsuleTitle1": "Data Analytics Dashboard",
+
+    "googleIntroShort": "Early in managing Google Ads, I found my team had misunderstood how ad groups compete and learn, corrected it in a meeting, and moved from re-registering underperforming campaigns to keeping well-learned groups alive. I named the resulting pattern the 'ad lifecycle,' visualized it on a dashboard, and cut cost per valid lead by 35% within four months on one regional campaign.",
+
+    "googleIntroExtra": "The common belief was that running multiple ad groups together helps them learn from competing with each other, but official documentation confirmed that only the auction winner gets served and keeps reinforcing its learning, while the loser doesn't even spend its budget. I also found that once a frequently-served ad lost effectiveness, traffic would shift to an already-weak alternate group, causing campaigns to die out early and waste both learning data and budget. I later proposed a change-log sheet to track adjustments, which the team adopted as its standard process.",
+
+    "readMore": "Read more",
+    "readLess": "Show less",
+
     "clickHint": "Click to see more",
 
-    "project1Desc": "Dense, spreadsheet-heavy data was making it hard to read trends at a glance. So I built a web dashboard from scratch to visualize the numbers in real time and surface details that used to get overlooked. I also defined a new concept, the 'campaign lifecycle,' to quantitatively measure how long each campaign stayed effective and proactively manage the right time to replace it.",
+    "project1Desc": "The main dashboard screen showing spend, conversions, and 'ad lifecycle' status for every campaign at a glance. It's the first thing I check each day to decide which campaigns need to be swapped out.",
 
     "project2Desc": "A unified campaign list and lifecycle management screen for overseeing and controlling multiple ad campaigns at once. A live search bar and category filters let you find any campaign quickly, while ON/OFF status and a 'rising / steady / declining' lifecycle badge based on performance trends make each campaign's health instantly visible. This made it possible to catch underperforming campaigns early and act on them right away, cutting the manual effort that used to go into monitoring campaigns one by one.",
 
@@ -73,8 +88,7 @@
     "project4Desc": "A daily ad performance table for transparently monitoring day-by-day results. Date, ad group name, spend, clicks, conversions, and impressions are all structured into a clear table, with ascending/descending sort by date for easier exploration. Conversion counts, the key metric, are highlighted so unusual spikes or drops in any given day can be spotted and responded to immediately.",
 
     "capsuleTitle2": "Meta Campaign Management",
-    "metaStatDesc1": "Since March 2026, I've managed Meta ad campaigns,",
-    "metaStatDesc2": "scaling up the ad budget while driving down the cost per lead.",
+    "metaStatDesc": "I applied the same experimental approach from Google Ads to Meta campaigns, and found that image creatives with bold, text-forward styling performed best. I also discovered that narrowing the campaign's audience on top of an already-narrow creative-level audience shrinks the pool twice over and hurts delivery, so I revised the targeting strategy accordingly. By adjusting creative and targeting together, I scaled the ad budget by 76% from March 2026 while cutting the cost per valid lead by 47%.",
 
     "statLabel1": "Cost per valid lead",
     "statSub1": "₩84,216 → ₩44,532",
@@ -92,7 +106,7 @@
     "careerRole1": "Performance Marketer",
     "careerContent1": "Performance marketing, ad planning, SNS marketing",
     "careerRole2": "Programming",
-    "careerContent2": "Hyundai i-Well Fullstack Bootcamp (SQL)",
+    "careerContent2": "Hyundai EZWell Fullstack Bootcamp (SQL)",
     "careerRole3": "Military",
     "careerContent3": "Built a recruit management system (Excel, large-scale data cleanup)",
 

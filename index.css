@@ -132,18 +132,39 @@ body {
 }
 
 .langBtn {
+    position: relative;
+    z-index: 1;
+    width: 36px;
     font-family: 'pretendard', sans-serif;
     font-size: 12px;
+    font-weight: 600;
     color: #999;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 4px 6px;
+    padding: 6px 0;
+    border-radius: 16px;
+    transition: color 0.3s ease;
 }
 
 .langBtn.active {
-    color: #1A1A1A;
-    font-weight: 500;
+    color: #FAFAFA;
+}
+
+.langIndicator {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 36px;
+    height: calc(100% - 8px);
+    background-color: #1A1A1A;
+    border-radius: 16px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
+.langIndicator.en-active {
+    transform: translateX(36px);
 }
 
 .content {
@@ -191,6 +212,70 @@ body {
 .myThing {
     text-align: left;
     margin-bottom: var(--space-md);
+}
+
+#googleIntroBlock {
+    max-width: 640px;
+    margin-bottom: var(--space-xl);
+}
+
+#googleIntroShort,
+#googleIntroExtra {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #666;
+    word-break: keep-all;
+    margin: 0;
+}
+
+#googleIntroExtra {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.4s ease;
+}
+
+#googleIntroBlock.expanded #googleIntroExtra {
+    max-height: 400px;
+    opacity: 1;
+    margin-top: var(--space-sm);
+}
+
+.readMoreBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'pretendard', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1A1A1A;
+    padding: 0;
+    margin-top: var(--space-sm);
+}
+
+.readMoreBtn .lessLabel {
+    display: none;
+}
+
+#googleIntroBlock.expanded .moreLabel {
+    display: none;
+}
+
+#googleIntroBlock.expanded .lessLabel {
+    display: inline;
+}
+
+.toggleIcon {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+#googleIntroBlock.expanded .toggleIcon {
+    transform: rotate(180deg);
 }
 
 
@@ -635,6 +720,6 @@ body {
 
 @media (max-width: 768px) {
     #langSwitch {
-        margin-left: 4px;
+        top: 16px;
     }
 }
