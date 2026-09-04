@@ -844,6 +844,13 @@ body {
     flex-direction: column; /* 이미지-텍스트를 세로로 */
     margin-bottom: var(--space-lg);
   }
+
+  /* 카드 2·4번처럼 데스크탑에서 텍스트가 먼저 오던 카드도
+     모바일에서는 이미지가 항상 먼저 보이도록 순서 강제 */
+  .thingBox .imageZIndex,
+  .thingBox .thumbnailZIdenx {
+    order: -1;
+  }
   .textPosition, .textPositionLeft {
     position: static;
     width: 100%;
