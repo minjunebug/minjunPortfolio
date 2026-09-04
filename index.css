@@ -516,27 +516,6 @@ body {
   margin-bottom: 3px;
 }
 
-@media (max-width: 768px) {
-  .deck, .deck.wider {
-    position: static;      /* absolute 배치 포기 */
-    width: 100%;
-    height: auto;
-  }
-  .thingBox {
-    position: static;      /* 절대좌표 → 그냥 위에서 아래로 쌓기 */
-    transform: none !important;
-    width: 100%;
-    flex-direction: column; /* 이미지-텍스트를 세로로 */
-    margin-bottom: var(--space-lg);
-  }
-  .textPosition, .textPositionLeft {
-    position: static;
-    width: 100%;
-    transform: none !important;
-  }
-  .thingImage { width: 100%; max-width: 400px; }
-}
-
 #metaStatSection {
     margin-bottom: var(--space-2xl);
 }
@@ -547,6 +526,7 @@ body {
     line-height: 1.7;
     color: #666;             /* 본문보다 한 단계 옅은 톤 */
     max-width: 560px;
+    word-break: keep-all;
     margin-bottom: var(--space-lg);
 }
 
@@ -580,13 +560,6 @@ body {
     font-size: 13px;
     color: #999;
     margin: 6px 0 0;
-}
-
-/* 모바일 대응 */
-@media (max-width: 768px) {
-    .statGrid {
-        grid-template-columns: 1fr;   /* 3열 → 1열로 세로 쌓기 */
-    }
 }
 
 #metaTrendChart {
@@ -642,7 +615,9 @@ body {
     font-size: 15px;
     line-height: 1.9;
     color: #666;
-    max-width: 460px;
+    max-width: 480px;
+    text-align: left;
+    word-break: keep-all;
     margin: 0 auto var(--space-lg);
 }
 
@@ -719,7 +694,188 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* 헤더 - 고정 높이 대신 유동적으로, 좌우 여백 확보 */
+    .header {
+        box-sizing: border-box;
+        height: auto;
+        min-height: 100px;
+        padding: 16px 20px;
+        gap: 10px;
+    }
+
+    .content {
+        padding-top: 150px;
+    }
+
+    #myCharacter {
+        height: 70px;
+    }
+
+    #myName {
+        font-size: 13px;
+    }
+
     #langSwitch {
-        top: 16px;
+        position: static;
+        top: auto;
+        right: auto;
+    }
+
+    .headerLeft {
+        flex: 1 1 auto;
+        min-width: 0;
+        gap: var(--space-xs);
+    }
+
+    #touchBtn {
+        font-size: 13px;
+        padding: 8px 14px;
+        white-space: nowrap;
+    }
+
+    /* 슬로건 */
+    #displaySloganText {
+        font-size: 22px;
+    }
+
+    #displaySubSloganText {
+        font-size: 13px;
+    }
+
+    #mainSlogan {
+        margin-bottom: var(--space-sm);
+    }
+
+    #subSlogan {
+        margin-bottom: var(--space-xl);
+    }
+
+    .capsuleTitle {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+
+    /* 구글/메타 서술 문단 - 고정 max-width 해제 */
+    #googleIntroBlock,
+    #metaStatDesc {
+        max-width: 100%;
+    }
+
+    /* 커리어 테이블 - 고정 flex-basis(320/500/140px) 깨고 세로 스택 */
+    .careerTable {
+        flex-wrap: wrap;
+        row-gap: 4px;
+        padding: 16px 0;
+    }
+
+    .careerRole,
+    .careerContent,
+    .careerYear {
+        flex: 1 1 100%;
+        text-align: left;
+    }
+
+    .careerRole {
+        font-size: 17px;
+    }
+
+    .careerContent {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .careerYear {
+        font-size: 13px;
+        color: #999;
+    }
+
+    .careerBox {
+        font-size: inherit;
+    }
+
+    .careerTextPosition {
+        font-size: 28px;
+    }
+
+    /* 포모 앱 스크린샷 - 3장 가로 배치 → 세로 스택 */
+    #pomoBox {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .pomoImg {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #pomoLinkSection {
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+    }
+
+    #moreThing {
+        font-size: 14px;
+    }
+
+    /* 푸터 */
+    #footerHook {
+        font-size: 26px;
+    }
+
+    #footerQuote {
+        max-width: 100%;
+    }
+
+    #metaTrendChart {
+        height: 160px;
+    }
+
+    .deck, .deck.wider {
+    position: static;      /* absolute 배치 포기 */
+    width: 100%;
+    height: auto;
+  }
+  .thingBox {
+    position: static;      /* 절대좌표 → 그냥 위에서 아래로 쌓기 */
+    transform: none !important;
+    width: 100%;
+    flex-direction: column; /* 이미지-텍스트를 세로로 */
+    margin-bottom: var(--space-lg);
+  }
+  .textPosition, .textPositionLeft {
+    position: static;
+    width: 100%;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .thingImage { width: 100%; max-width: 400px; }
+
+    .statGrid {
+        grid-template-columns: 1fr;   /* 3열 → 1열로 세로 쌓기 */
+    }
+}
+
+@media (max-width: 420px) {
+    #displaySloganText {
+        font-size: 19px;
+    }
+
+    #myCharacter {
+        height: 56px;
+    }
+
+    #myName {
+        display: none;   /* 아주 좁은 화면에서는 캐릭터만 남기고 이름 텍스트 생략 */
+    }
+
+    .capsuleTitle {
+        font-size: 14px;
+        padding: 7px 16px;
+    }
+
+    #footerHook {
+        font-size: 22px;
     }
 }
